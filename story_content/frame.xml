@@ -13,7 +13,7 @@
         <options>
           <option name="title_enabled" value="true">
             <options>
-              <option name="title_text" value="Youtube_updated" />
+              <option name="title_text" value="Youtube_V2" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
@@ -1469,7 +1469,7 @@
         <slidelink slideid="_player.6qDcILbilDF" displaytext="Untitled Scene" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.6qDcILbilDF.6AWMZ7nTufn" displaytext="Find out which type of DOE to use &#xA;in this 1-minute quiz!" expand="false" type="slide" />
-            <slidelink slideid="_player.6qDcILbilDF.5odyQXlhzax" displaytext="Which types of DOE fit you best?" expand="false" type="slide" />
+            <slidelink slideid="_player.6qDcILbilDF.5odyQXlhzax" displaytext="What experiment are you looking to carry out today?" expand="false" type="slide" />
             <slidelink slideid="_player.6qDcILbilDF.6J0xdU5BZsr" displaytext="Predict product reliability" expand="false" type="slide" />
             <slidelink slideid="_player.6qDcILbilDF.5ym0NJaq31s" displaytext="Manufacturing process" expand="false" type="slide" />
             <slidelink slideid="_player.6qDcILbilDF.5gmsAQpbw1x" displaytext="Computer simulations" expand="false" type="slide" />
