@@ -2,22 +2,22 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6DjjoKb0gVu":
+      case "6A9020NyKyj":
         Script1();
         break;
-      case "6BkpE3yWgtI":
+      case "6BOgtA5SmJc":
         Script2();
         break;
-      case "6V3fBm2vVey":
+      case "5YT3I2Moxdz":
         Script3();
         break;
-      case "6hq0Y4QbLsF":
+      case "6S8MjSUEHs8":
         Script4();
         break;
-      case "5s3UOFgKFXw":
+      case "5pCa6RaqIzJ":
         Script5();
         break;
-      case "6NGxDUHoHd6":
+      case "5ddAMnup7s7":
         Script6();
         break;
   }
@@ -46,6 +46,7 @@ storyline =
 {
  "date" : new Date().toJSON().slice(0,10), //STORE DATE
  "answer" : "covering",
+ "industry" : player.GetVar("industry"),
 }
 }
 
@@ -94,6 +95,7 @@ storyline =
 {
  "date" : new Date().toJSON().slice(0,10), //STORE DATE
  "answer" : "space",
+ "industry" : player.GetVar("industry"),
 }
 }
 
