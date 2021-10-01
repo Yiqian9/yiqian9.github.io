@@ -2,29 +2,23 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5hPcD0tYKFN":
+      case "6gFRydyKxIb":
         Script1();
         break;
-      case "6pr9gMlidmr":
+      case "64K3grZazwD":
         Script2();
         break;
-      case "6hB3cKbrPp2":
+      case "6kQgvzpvUSr":
         Script3();
         break;
-      case "6DoBlM8a2hd":
+      case "63el9UWvJ3W":
         Script4();
         break;
-      case "5lpVLpizPNZ":
+      case "6J0Zr6tTRbf":
         Script5();
         break;
-      case "6EWhQwfZjc1":
+      case "66tOHXTUibc":
         Script6();
-        break;
-      case "5klxaQxMIFT":
-        Script7();
-        break;
-      case "6REo7vuEFnl":
-        Script8();
         break;
   }
 }
@@ -43,33 +37,6 @@ function Script2()
   var player = GetPlayer();
  
 //PLACE YOUR WEB APP URL
-WEB_APP_URL = "
-https://script.google.com/macros/s/AKfycbxN7njMDweVzPRISQ6MRIVIcKxC0PR53z4D_0oS_YDu2JJ9hYI-8E0ovN7YKvvYo7CLKg/exec";
- 
-// STORE ARTICULATE STORYLINE VARIABLES
-// "Columnname_Google_Spreadsheet" : player.GetVar("Name_Storyline_Variable")
-// ATTENTION: Use a comma if you use multiple Storyline variables
-storyline =
-{
- "date" : new Date().toJSON().slice(0,10), //STORE DATE
- "industry" : player.GetVar("industry"),
-}
-}
-
-function Script3()
-{
-  var head = document.getElementsByTagName('head')[0];
-var script = document.createElement('script');
-script.src = '//code.jquery.com/jquery-1.11.0.min.js';
-script.type = 'text/javascript';
-head.appendChild(script)
-}
-
-function Script4()
-{
-  var player = GetPlayer();
- 
-//PLACE YOUR WEB APP URL
 WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxN7njMDweVzPRISQ6MRIVIcKxC0PR53z4D_0oS_YDu2JJ9hYI-8E0ovN7YKvvYo7CLKg/exec";
  
 // STORE ARTICULATE STORYLINE VARIABLES
@@ -77,11 +44,12 @@ WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxN7njMDweVzPRISQ6MRIVIcK
 // ATTENTION: Use a comma if you use multiple Storyline variables
 storyline =
 {
+ "date" : new Date().toJSON().slice(0,10), //STORE DATE
  "answer" : "covering",
 }
 }
 
-function Script5()
+function Script3()
 {
   //DELAY SO JQUERY LIBRARY IS LOADED
 setTimeout(function (){
@@ -103,7 +71,7 @@ return false;
 }, 1000);
 }
 
-function Script6()
+function Script4()
 {
   var head = document.getElementsByTagName('head')[0];
 var script = document.createElement('script');
@@ -112,7 +80,7 @@ script.type = 'text/javascript';
 head.appendChild(script)
 }
 
-function Script7()
+function Script5()
 {
   var player = GetPlayer();
  
@@ -124,12 +92,12 @@ WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxN7njMDweVzPRISQ6MRIVIcK
 // ATTENTION: Use a comma if you use multiple Storyline variables
 storyline =
 {
- 
+ "date" : new Date().toJSON().slice(0,10), //STORE DATE
  "answer" : "space",
 }
 }
 
-function Script8()
+function Script6()
 {
   //DELAY SO JQUERY LIBRARY IS LOADED
 setTimeout(function (){
