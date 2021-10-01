@@ -2,32 +2,23 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6Rm1YBVs3Qx":
+      case "5XznYBlgAqK":
         Script1();
         break;
-      case "6dMwvFLB2am":
+      case "5W9FCPX1u6P":
         Script2();
         break;
-      case "60YbZja9wDz":
+      case "5wwynJUvuJz":
         Script3();
         break;
-      case "6ZziarMiCpU":
+      case "6JZIlBUrG09":
         Script4();
         break;
-      case "6ffbhYxF96X":
+      case "6ZER0d4SgXa":
         Script5();
         break;
-      case "6JtLh7opsRT":
+      case "6WWmXXUf0LC":
         Script6();
-        break;
-      case "6Ak2jb4L5jD":
-        Script7();
-        break;
-      case "5jxNqvHNW6W":
-        Script8();
-        break;
-      case "5e3P9eiCJsP":
-        Script9();
         break;
   }
 }
@@ -46,7 +37,7 @@ function Script2()
   var player = GetPlayer();
  
 //PLACE YOUR WEB APP URL
-WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxlCDePi6jIYPMxSyEpGOAFLHhLhOg0Gl6IF2V63clM92lC0ufp85cIAREPIoKldsFrUQ/exec";
+WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyNSu62mpo694H4IsFtjgLayeXNgR-rKJAMMqOdqVD7eTI_YKsXqenCgFDKsUTFX1YSMw/exec";
  
 // STORE ARTICULATE STORYLINE VARIABLES
 // "Columnname_Google_Spreadsheet" : player.GetVar("Name_Storyline_Variable")
@@ -54,7 +45,8 @@ WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxlCDePi6jIYPMxSyEpGOAFLH
 storyline =
 {
  "date" : new Date().toJSON().slice(0,10), //STORE DATE
- "answer" : "space filling",
+ "industry" : player.GetVar("industry"),
+ "answer" : "covering",
 }
 }
 
@@ -94,7 +86,7 @@ function Script5()
   var player = GetPlayer();
  
 //PLACE YOUR WEB APP URL
-WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxlCDePi6jIYPMxSyEpGOAFLHhLhOg0Gl6IF2V63clM92lC0ufp85cIAREPIoKldsFrUQ/exec";
+WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyNSu62mpo694H4IsFtjgLayeXNgR-rKJAMMqOdqVD7eTI_YKsXqenCgFDKsUTFX1YSMw/exec";
  
 // STORE ARTICULATE STORYLINE VARIABLES
 // "Columnname_Google_Spreadsheet" : player.GetVar("Name_Storyline_Variable")
@@ -102,59 +94,12 @@ WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxlCDePi6jIYPMxSyEpGOAFLH
 storyline =
 {
  "date" : new Date().toJSON().slice(0,10), //STORE DATE
- "answer" : "maxdiff",
+ "industry" : player.GetVar("industry"),
+ "answer" : "space",
 }
 }
 
 function Script6()
-{
-  //DELAY SO JQUERY LIBRARY IS LOADED
-setTimeout(function (){
- 
-//Export to Google
-$.ajax({
-url: WEB_APP_URL,
-type: "POST",
-data : storyline,
-success: function(data)
-{
-console.log(data);
-},
-error: function(err) {
-console.log('Error:', err);
-}
-});
-return false;
-}, 1000);
-}
-
-function Script7()
-{
-  var head = document.getElementsByTagName('head')[0];
-var script = document.createElement('script');
-script.src = '//code.jquery.com/jquery-1.11.0.min.js';
-script.type = 'text/javascript';
-head.appendChild(script)
-}
-
-function Script8()
-{
-  var player = GetPlayer();
- 
-//PLACE YOUR WEB APP URL
-WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxlCDePi6jIYPMxSyEpGOAFLHhLhOg0Gl6IF2V63clM92lC0ufp85cIAREPIoKldsFrUQ/exec";
- 
-// STORE ARTICULATE STORYLINE VARIABLES
-// "Columnname_Google_Spreadsheet" : player.GetVar("Name_Storyline_Variable")
-// ATTENTION: Use a comma if you use multiple Storyline variables
-storyline =
-{
- "date" : new Date().toJSON().slice(0,10), //STORE DATE
- "answer" : "choice",
-}
-}
-
-function Script9()
 {
   //DELAY SO JQUERY LIBRARY IS LOADED
 setTimeout(function (){
