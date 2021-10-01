@@ -2,23 +2,32 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6A9020NyKyj":
+      case "6MzGaQopSfb":
         Script1();
         break;
-      case "6BOgtA5SmJc":
+      case "6r1AxB41i9A":
         Script2();
         break;
-      case "5YT3I2Moxdz":
+      case "5Vch1qeSxKx":
         Script3();
         break;
-      case "6S8MjSUEHs8":
+      case "6BbO5nVtK6s":
         Script4();
         break;
-      case "5pCa6RaqIzJ":
+      case "5VPV3kZOjnS":
         Script5();
         break;
-      case "5ddAMnup7s7":
+      case "6c1Aafzp0Io":
         Script6();
+        break;
+      case "6Xvr9350NQU":
+        Script7();
+        break;
+      case "6YvhElqzimd":
+        Script8();
+        break;
+      case "6pLL9w3QGeg":
+        Script9();
         break;
   }
 }
@@ -45,7 +54,7 @@ WEB_APP_URL = "https://script.google.com/macros/s/AKfycbz4kH5W7osuA5Iuo0YJ8rKLrV
 storyline =
 {
  "date" : new Date().toJSON().slice(0,10), //STORE DATE
- "answer" : "covering",
+ "answer" : "accelerate",
  "industry" : player.GetVar("industry"),
 }
 }
@@ -94,12 +103,57 @@ WEB_APP_URL = "https://script.google.com/macros/s/AKfycbz4kH5W7osuA5Iuo0YJ8rKLrV
 storyline =
 {
  "date" : new Date().toJSON().slice(0,10), //STORE DATE
- "answer" : "space",
+ "answer" : "covering",
  "industry" : player.GetVar("industry"),
 }
 }
 
 function Script6()
+{
+  //DELAY SO JQUERY LIBRARY IS LOADED
+setTimeout(function (){
+ 
+//Export to Google
+$.ajax({
+url: WEB_APP_URL,
+type: "POST",
+data : storyline,
+success: function(data)
+{
+console.log(data);
+},
+error: function(err) {
+console.log('Error:', err);
+}
+});
+return false;
+}, 1000);
+}
+
+function Script7()
+{
+  var head = document.getElementsByTagName('head')[0];
+var script = document.createElement('script');
+script.src = '//code.jquery.com/jquery-1.11.0.min.js';
+script.type = 'text/javascript';
+head.appendChild(script)
+}
+
+function Script8()
+{
+  var player = GetPlayer();
+ 
+WEB_APP_URL = "https://script.google.com/macros/s/AKfycbz4kH5W7osuA5Iuo0YJ8rKLrVNtPsBpO7Ps15aDnxx2DanesdQgNSM4xKXy78R1ZZc3ug/exec";
+ 
+storyline =
+{
+ "date" : new Date().toJSON().slice(0,10), //STORE DATE
+ "answer" : "space",
+ "industry" : player.GetVar("industry"),
+}
+}
+
+function Script9()
 {
   //DELAY SO JQUERY LIBRARY IS LOADED
 setTimeout(function (){
