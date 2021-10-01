@@ -2,22 +2,22 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5e0KK190Go5":
+      case "6DjjoKb0gVu":
         Script1();
         break;
-      case "6j9Z4M0hlvj":
+      case "6BkpE3yWgtI":
         Script2();
         break;
-      case "6BuiJg8IiFG":
+      case "6V3fBm2vVey":
         Script3();
         break;
-      case "64S8tVWUJOB":
+      case "6hq0Y4QbLsF":
         Script4();
         break;
-      case "5qkbmV1e0vL":
+      case "5s3UOFgKFXw":
         Script5();
         break;
-      case "6qRzV2ERA06":
+      case "6NGxDUHoHd6":
         Script6();
         break;
   }
@@ -37,7 +37,7 @@ function Script2()
   var player = GetPlayer();
  
 //PLACE YOUR WEB APP URL
-WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxP7rIomtOD8wfpHfTVJR5R4HWhHArvVZ-kcXabOG6q36zeENcroYDVfc5_EAaa-jZOWQ/exec";
+WEB_APP_URL = "https://script.google.com/macros/s/AKfycbz4kH5W7osuA5Iuo0YJ8rKLrVNtPsBpO7Ps15aDnxx2DanesdQgNSM4xKXy78R1ZZc3ug/exec";
  
 // STORE ARTICULATE STORYLINE VARIABLES
 // "Columnname_Google_Spreadsheet" : player.GetVar("Name_Storyline_Variable")
@@ -85,7 +85,7 @@ function Script5()
   var player = GetPlayer();
  
 //PLACE YOUR WEB APP URL
-WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxP7rIomtOD8wfpHfTVJR5R4HWhHArvVZ-kcXabOG6q36zeENcroYDVfc5_EAaa-jZOWQ/exec";
+WEB_APP_URL = "https://script.google.com/macros/s/AKfycbz4kH5W7osuA5Iuo0YJ8rKLrVNtPsBpO7Ps15aDnxx2DanesdQgNSM4xKXy78R1ZZc3ug/exec";
  
 // STORE ARTICULATE STORYLINE VARIABLES
 // "Columnname_Google_Spreadsheet" : player.GetVar("Name_Storyline_Variable")
